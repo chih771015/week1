@@ -1,0 +1,62 @@
+1.	for number in lottoNumbers.count - 3...lottoNumbers.count - 1
+	{
+    print(lottoNumbers[number])
+	}
+2.	要加二的話就是在range後面加上 where x % 2 == 0 的判斷式
+	意思是當值被二除時餘數為零時才進入迴圈
+	要減一的話是將range匡起來.reversed()
+
+	for n in (0...lottoNumbers.count - 1).reversed()
+	{
+    print(lottoNumbers[n])
+    }
+    //以上印出數值為5.6.7.8.9.10
+
+    for w in 0...lottoNumbers.count - 1 where w % 2 == 0
+    {
+	print(lottoNumbers[w])
+	}
+	//以上印出10.8.6
+3.	var aa = 0
+	while aa >= 0, aa < lottoNumbers.count{
+    print(lottoNumbers[aa])
+    aa += 2
+    }
+    //印出10.8.6
+
+    var bb = lottoNumbers.count - 1
+	while bb >= 0 {
+    print(lottoNumbers[bb])
+    bb = bb - 1
+	}
+	//印出5.6.7.8.9.10
+4.	var cc = 0
+	repeat{
+    print(lottoNumbers[cc])
+    cc = cc + 2
+	}while cc >= 0 && cc < lottoNumbers.count
+	//印出10.8.68
+	var dd = lottoNumbers.count - 1
+	repeat{
+    print(lottoNumbers[dd])
+    dd = dd - 1
+	}while dd >= 0
+	//印出5.6.7.8.9.10
+5.	var isRaining: Int = 0
+
+	if isRaining == 1{
+    print("It’s raining, I don’t want to work today.")
+	}
+	else{
+    print("Although it’s sunny, I still don’t want to work today.")
+	}
+	//若要print It’s raining, I don’t want to work today. 則var isRaining = 1
+6.	var jobLevel = 1
+	switch jobLevel {
+	case 1: print("Present Member")
+	case 2: print("Team Leader")
+	case 3: print("Manager")
+	case 4: print("Director")
+	default: print("We don't have this job")
+	}
+	//要印出Team Leader 則jobLevel = 2 依此類推 jobLevel在五以上則顯示We don't have this job

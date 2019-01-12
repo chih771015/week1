@@ -1,0 +1,51 @@
+1.	var myFriends:[String] = []
+2.	myFriends = ["Ian", "Bomi", "Kevin"]
+	or
+	myFriends += ["Ian"]
+	myFriends += ["Bomi"]
+	myFriends += ["Kevin"]
+3.	myFriends.append("Michael")
+4.	myFriends.remove(at: 2)
+	myFriends.insert("Kevin", at: 0)
+	印出["Kevin", "Ian", "Bomi", "Michael"]
+	or
+	myFriends.swapAt(0, 2)
+	印出["Kevin", "Bomi", "Ian", "Michael"]
+	//看到底要怎麼排序
+5.	for name in myFriends
+						{
+   						print(name)
+    					}
+6.	找出myFriends的第五個是
+	myFriends[4]
+	但是因為第五個集合沒有東西 所以會顯示錯誤 無法執行
+7.	以上面的題目為表示
+	myFriends[0]
+	or
+	myFriends.first
+8.	myFriends[myFriends.count - 1]
+	or
+	myFriends.last
+9.	var myCountryNumber: [String: Int] = [:]
+10.	myCountryNumber = ["US": 1,"GB": 44, "JP": 81]
+	or
+	myCountryNumber.updateValue(1, forKey: "US")
+	myCountryNumber.updateValue(44, forKey: "GB")
+	myCountryNumber.updateValue(81, forKey: "JP")
+11.	myCountryNumber["GB"] = 0
+12.	不太清楚跟第九題差在哪裡
+	大概就是 宣告 名字: [key形式: value形式] = [:]
+13.	9題為例
+	myCountryNumber["JP"] = nil
+	or
+	myCountryNumber.removeValue(forKey: "JP")
+
+	
+	
+
+
+
+
+
+
+

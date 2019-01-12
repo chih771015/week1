@@ -1,0 +1,15 @@
+1.	
+2.	git status 	看當前目錄的文件狀況 是否有新文件 已改動卻沒有任何git的文件 
+				或是已經add進入暫存區的文件 哪些是沒有改動的文件 都會顯示
+	git add 	後面加入檔案名將此檔案加入暫存區
+	git commit	將此暫存區的檔案新建一個commit 並且寫下此commit的備註 例如修改了什麼 換了什麼
+	git log		顯示此commit與從此之前延伸過來的commit資訊
+	git push [Repo_name] [Branch_name] 推送此目錄的Branch  往Repo_name所連結的位置送
+	git remote -v 出現所有遠端倉庫的詳細資料 往哪發送的連結
+	git branch 	檢視現在所有分支 或是加名字創建新的分支
+	fork		github 專用詞 github上面的clone 可以在github上 fork一份專案到自己的github帳號內
+3.	先將終端機的目錄移至想要上傳的目錄內 用cd 指令
+	先確定你的目錄內的檔案都已經有commit 且是在你想要上傳的分支上
+	沒有就用 git add git commit 來創建
+	確認完畢後 用git remote add "Repo_name" "link" 創建一個遠端倉庫的名字 link是github的連結
+	最後使用git push "Repo_name" "Branch_name" 上傳你此分支的所有更新

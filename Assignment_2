@@ -1,0 +1,36 @@
+1. 	let pi = 3.14159265 
+	因為他是一個定值 所以宣告常數 不會對他做變動
+	如果要用var的話則是radius 因為我們會給不同的半徑
+2.	let x = 10
+	let y = 20
+	let average =  ( x + y ) / 2
+3.	1.由於要讀出有小數點的值
+	  必須宣告他的形式為浮點數
+	  let x: Double = 10
+	  let y: Double = 20
+	  let average: Double =  ( x + y ) / 2
+	  或是將原本的整數結果改為浮點數
+	  let averageFloat = Float(average)
+	  print(averageFloat)
+	2.一個是整數的形式 一個是浮點數的形式 
+4.	var flag: Bool = true
+	var inputString: String = "Hello world."
+	let bitsInBite: Int = 8
+	let averageScore: Double = 86.8
+5.	var salary = 22000
+	salary += 28000
+	or
+	salary = salary + 28000
+6.	== 
+7.	let q = 10
+	let w = 3
+	let retain = q % w
+8.	let 為宣告常數 constant 用在不會再變化的情況下 為定值
+	var 為宣告變數 variable 作為接收資料之類的 可變換裡面的值
+	宣告常數的情況下就是確定這個值不需要變動 以防萬一不會被其他程式碼改掉已導致整個程式錯誤
+9.	不能使用空白符號 開頭不能為數字
+	不能用特殊字元不能使用數學符號 但是可以使用中文或表情圖片 不過建議還是用英文
+	用camel case的方式合併多個字變一個字
+10.	當沒有宣告常數變數的形式時 會自動幫你判斷此數值的形式 
+	當然如果有需要還是要宣告比較清楚
+11.	不能將以宣告為Int形式的值 以String形式來取代
